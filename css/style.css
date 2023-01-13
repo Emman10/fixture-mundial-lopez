@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "GraphikArabicMedium";
+    src: url(../assets/fonts/GraphikArabicMedium.otf); }
+    @font-face {
+        font-family: "Qatar2022Arabic-Medium";
+        src: url(../assets/fonts/Qatar2022Arabic-Medium.otf); }  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: Qatar2022Arabic-Medium;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    font-family: GraphikArabicMedium; 
+    font-size: 20px;
+    text-align: center;
+    background-color: #8d1c3d;
+    color: aliceblue;
+    align-items: center;
+    margin: 2%;
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 3px solid #d3829a;
+}
+li{
+    display: flex;
+    flex-direction: row;
+}
+.tituloGrupo{
+    padding-bottom: 20px;
+}
+.bodyGrupo{
+    background-color: #8d1c3d;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: aliceblue;
+    margin: 2%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #d3829a;
+}
+.resultadoGrupo{
+    display: grid;
+    grid-template-areas: 
+    "equipoLocal guionCentro equipoVisitante"
+    "simular simular simular";
+    width: 40%;
+    background-color: #8d1c3d;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid #a12047;
+    
+}
+.guionCentro{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.equipoLocal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+.equipoVisitante{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+.resultadoPartido{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+.tablaPosiciones{
+    width: 1000px;
+    font-family: Qatar2022Arabic-Medium;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid #a12047;
+    margin-bottom: 10px;
+}
+th,td{
+    padding: 10px;
+}
+.nombreEquipo, .pts, th{
+    font-size: 22px;
+    border-bottom: 3px solid #a12047;
+    border-collapse: collapse;
+}
+th:nth-child(1){
+    text-align: left; 
+}
+.nombreEquipo, .pts{
+    border-bottom: none;
+}
+.tituloPosiciones{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+    height: 27px;
+    width: 27px;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #a12047;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* eliminar decorador de numeros */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] { -moz-appearance:textfield; }
+/* eliminar decorador de numeros */
+
+.numTabla{
+    text-align: center;
+}
+
+h1{
+}
+h2{
+    font-family: Qatar2022Arabic-Medium;
+}
+h3{
+    font-family: Qatar2022Arabic-Medium;
+}
+h4{
+    font-family: Qatar2022Arabic-Medium;
+    font-size: 20px;
+}
+input[type="submit"]{
+    position: relative;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font: Qatar2022Arabic-Medium;
+    font-size: 20px;
+    color: aliceblue;
+    border: 3px solid #a12047;
+    outline: none;
+    background-color: #8d1c3d;
+}
+.simular{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+
+}
