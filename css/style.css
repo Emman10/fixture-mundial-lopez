@@ -9,67 +9,132 @@
     padding: 0;
     box-sizing: border-box;
     font: Qatar2022Arabic-Medium;
+    color: aliceblue;
+}
+.link{
+    color: #2D021D;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: head;
+    padding-top: 30px;
+}
+.logo{
+    width: 100px;
+}
+.bodyMain{
+    background: linear-gradient(135deg, #861737, #2D021D);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bodyMainIndex{
+    background: linear-gradient(135deg, #861737, #2D021D);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 140px;
+    padding-top: 50px;
+}
+.bodyIndex{
+    display: flex;
+    flex-direction: column;
+}
+.tituloIndex{
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+}
+input[type= "text"]{
+    font-family: GraphikArabicMedium;
+    color: #2D021D;
+    margin-bottom: 20px;
+}
+input[type= "select"]{
+    font-family: GraphikArabicMedium;
+    color: #2D021D;
+}
+select{
+    margin-bottom: 20px;
+    color: #2D021D;
+}
+.recuerdame{
+    font-family: GraphikArabicMedium;
+    font-size: 14px;
+}
+#btnIngreso{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
 }
 .titulo{
     display: flex;
     flex-direction: column;
     font-family: GraphikArabicMedium; 
     font-size: 20px;
-    text-align: center;
-    background-color: #8d1c3d;
+    text-align: start;
     color: aliceblue;
     align-items: center;
-    margin: 2%;
-    margin-top: 20px;
-    padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    border: 3px solid #d3829a;
+    /* border-radius: 15px;
+    border: 3px solid #d3829a; */
 }
 li{
     display: flex;
     flex-direction: row;
 }
 .tituloGrupo{
-    padding-bottom: 20px;
+    display: flex;
+    grid-area: tituloGrupo;
+    font-size: 30px;
+    height: 154px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
 }
 .bodyGrupo{
-    background-color: #8d1c3d;
-    display:flex;
-    flex-direction: column;
+    display:grid;
+    grid-template-areas:
+    "head tituloGrupo"
+    "resultadoGrupo tablaPosiciones"
+    "resultadoGrupo simular";
+    gap: 20px;
     align-items: center;
     padding: 20px;
     color: aliceblue;
-    margin: 2%;
-    margin-top: 20px;
     padding: 20px;
-    border-radius: 15px;
-    border: 3px solid #d3829a;
+    padding-bottom: 70px;
 }
 .resultadoGrupo{
-    display: grid;
-    grid-template-areas: 
-    "equipoLocal guionCentro equipoVisitante"
-    "simular simular simular";
-    width: 40%;
-    background-color: #8d1c3d;
+    width: 30em;
+    display: flex;
+    justify-content: space-between;
+    grid-area: resultadoGrupo;
+    background-color: rgba(141, 28, 61, .2);
     padding: 10px;
     border-radius: 20px;
     border: 3px solid #a12047;
-    
 }
 .guionCentro{
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 15.5px;
 }
 .equipoLocal{
+    width: 12em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
 }
 .equipoVisitante{
+    width: 12em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -81,19 +146,25 @@ li{
     flex-direction: row;
     padding: 15px;
 }
+.posicionesGrupo{
+    width: 40%;
+}
 .tablaPosiciones{
-    width: 1000px;
+    grid-area: tablaPosiciones;
+    width: 34.5em;
     font-family: Qatar2022Arabic-Medium;
     padding: 10px;
     border-radius: 20px;
+    background-color: rgba(141, 28, 61, .2);
     border: 3px solid #a12047;
-    margin-bottom: 10px;
 }
 th,td{
     padding: 10px;
+    font-size: 16px;
 }
 .nombreEquipo, .pts, th{
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: 500;
     border-bottom: 3px solid #a12047;
     border-collapse: collapse;
 }
@@ -111,9 +182,11 @@ th:nth-child(1){
 }
 input[type="number"]{
     -moz-appearance: textfield;
-    height: 27px;
-    width: 27px;
-    font-size: 15px;
+    font-family: Qatar2022Arabic-Medium;
+    color: #2D021D;
+    height: 25px;
+    width: 25px;
+    font-size: 16px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -139,17 +212,18 @@ h1{
 }
 h2{
     font-family: Qatar2022Arabic-Medium;
+    text-align: center;
 }
 h3{
     font-family: Qatar2022Arabic-Medium;
 }
 h4{
     font-family: Qatar2022Arabic-Medium;
-    font-size: 20px;
+    font-size: 16px;
 }
 input[type="submit"]{
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 200px;
     height: 50px;
     font: Qatar2022Arabic-Medium;
@@ -160,8 +234,25 @@ input[type="submit"]{
     background-color: #8d1c3d;
 }
 .simular{
+    grid-area: simular;
     display: flex;
     align-items: center;
-    justify-content: center;   
-
+    justify-content: space-evenly;   
+}
+#simular:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #d3829a;
+    color: black;
+    transform: scale(1.03);
+}
+#simularMunial{
+    grid-area: simular;
+}
+#simularMunial:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #d3829a;
+    color: black;
+    transform: scale(1.03);
 }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/image/favicon-16x16.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Fixture</title>
+</head>
+<body class="bodyMain">
+    <div class="bodyGrupo">
+        <div class="head">
+            <div>
+                <img src="../assets/image/logo-de-qatar (2).png" class="logo" alt="logo">
+            </div>
+            <div class="titulo">
+                <h1>FIFA WORLD CUP</h1>
+                <h2>QATAR 2022</h2>
+            </div>
+        </div>
+        <div class="tituloGrupo">
+            <h2>~ GRUPO C  ~</h2>
+        </div>
+        <div class="resultadoGrupo">
+            <div>
+                <div class="equipoLocal">
+                    <h4>Argentina</h4>
+                    <input id="resultArg1" class="goles golesLocal golesArg" type="number" min="0" max="9">
+                </div>
+                <div class="equipoLocal">
+                    <h4>México</h4>
+                    <input class="goles golesLocal golesMex" type="number" min="0" max="9">
+                </div>
+                <div class="equipoLocal">
+                    <h4>Argentina</h4>
+                    <input class="goles golesLocal golesArg" type="number" min="0" max="9" >
+                </div>
+                <div class="equipoLocal">
+                    <h4>Polonia</h4>
+                    <input class="goles golesLocal golesPol" type="number" min="0" max="9">
+                </div>
+                <div class="equipoLocal">
+                    <h4>Polonia</h4>
+                    <input class="goles golesLocal golesPol" type="number" min="0" max="9" >
+                </div>
+                <div class="equipoLocal">
+                    <h4>Arabia Saudita</h4>
+                    <input class="goles golesLocal golesAra" type="number" min="0" max="9" >
+                </div>
+            </div>
+            <div>
+                <h4 class="guionCentro">-</h4>
+                <h4 class="guionCentro">-</h4>
+                <h4 class="guionCentro">-</h4>
+                <h4 class="guionCentro">-</h4>
+                <h4 class="guionCentro">-</h4>
+                <h4 class="guionCentro">-</h4>
+            </div>
+            <div>
+                <div class="equipoVisitante">
+                    <input class="goles golesVisitante golesAra" type="number" min="0" max="9" ">
+                    <h4>Arabia Saudita</h4>
+                </div>
+                <div class="equipoVisitante">
+                    <input class="goles golesVisitante golesPol" type="number" min="0" max="9" >
+                    <h4>Polonia</h4>
+                </div>
+                <div class="equipoVisitante">
+                    <input class="goles golesVisitante golesMex" type="number" min="0" max="9">
+                    <h4>México</h4>
+                </div>
+                <div class="equipoVisitante">
+                    <input class="goles golesVisitante golesAra" type="number" min="0" max="9">
+                    <h4>Arabia Saudita</h4>
+                </div>
+                <div class="equipoVisitante">
+                    <input class="goles golesVisitante golesArg" type="number" min="0" max="9">
+                    <h4>Argentina</h4>
+                </div>
+                <div class="equipoVisitante">
+                    <input class="goles golesVisitante golesMex" type="number" min="0" max="9">
+                    <h4>México</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="simular">
+            <div>
+                <input type="submit" name="simular" id="simular" value="Simular">
+            </div>
+            <div>
+                <input type="submit" class="simularMundial" name="simularMundial" id="simularMundial" value="Result. Mundial">
+            </div>
+        </div>
+
+        <div class="posicionesGrupo">
+            <table class="tablaPosiciones" id="tablaPosiciones">
+                <thead>
+                    <tr>
+                        <th>Equipos</th>
+                        <th>Pts</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>Dif</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td class="nombreEquipo">Argentina</td>
+                        <td class="numTabla pts">0</td>
+                        <td class="numTabla pj" id="pj">0</td>
+                        <td class="numTabla pg">0</td>
+                        <td class="numTabla pe">0</td>
+                        <td class="numTabla pp">0</td>
+                        <td class="numTabla gf">0</td>
+                        <td class="numTabla gc">0</td>
+                        <td class="numTabla dif">0</td>
+                    </tr>
+                    <tr>
+                        <td class="nombreEquipo">Arabia Saudita</td>
+                        <td class="numTabla pts">0</td>
+                        <td class="numTabla pj">0</td>
+                        <td class="numTabla pg">0</td>
+                        <td class="numTabla pe">0</td>
+                        <td class="numTabla pp">0</td>
+                        <td class="numTabla gf">0</td>
+                        <td class="numTabla gc">0</td>
+                        <td class="numTabla dif">0</td>
+                    </tr>
+                    <tr>
+                        <td class="nombreEquipo">Polonia</td>
+                        <td class="numTabla pts">0</td>
+                        <td class="numTabla pj">0</td>
+                        <td class="numTabla pg">0</td>
+                        <td class="numTabla pe">0</td>
+                        <td class="numTabla pp">0</td>
+                        <td class="numTabla gf">0</td>
+                        <td class="numTabla gc">0</td>
+                        <td class="numTabla dif">0</td>
+                    </tr>
+                    <tr>
+                        <td class="nombreEquipo">México</td>
+                        <td class="numTabla pts">0</td>
+                        <td class="numTabla pj">0</td>
+                        <td class="numTabla pg">0</td>
+                        <td class="numTabla pe">0</td>
+                        <td class="numTabla pp">0</td>
+                        <td class="numTabla gf">0</td>
+                        <td class="numTabla gc">0</td>
+                        <td class="numTabla dif">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>  
+</body>
+</html>
